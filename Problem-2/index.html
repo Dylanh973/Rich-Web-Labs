@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem 2</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Note taking app</h1>
+            <h2>You can add a note, edit a note and delete a note</h2>
+        </header>
+    <form>
+        <textarea id="noteContent" name="noteInfo" placeholder="Insert your note info" rows="10" cols="100"></textarea><br>
+        <select id="noteColor" name="noteColor" style="height: 75px; width: 150px">
+            <option value="orange"style="background-color: orange">Orange</option>
+            <option value="green"style="background-color: green">Green</option>
+            <option value="blue"style="background-color: blue">Blue</option>
+            <option value="yellow"style="background-color: yellow">Yellow</option>
+        </select>
+    </form>
+
+    <div class="button-center">
+        <button onclick="addNote()" style="height: 75px; width: 150px">Add note</button>
+    </div>
+        <h1>Notes:</h1><br>
+    </body>
+
+</html>
