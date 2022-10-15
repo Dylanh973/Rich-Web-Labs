@@ -11,3 +11,12 @@ form {
 .button-center{
     text-align: center;
 }
+
+.noteBox {
+    width: 47%;
+    height: 160px;
+    font-size: 30px;
+    display:inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
