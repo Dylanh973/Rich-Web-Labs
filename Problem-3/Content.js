@@ -23,12 +23,9 @@ for (let i = 0; i < headers.length; i++){
 const p = document.getElementsByTagName("p");
 for (let i = 0; i < p.length; i++){
     p[i].innerText = "This website is now about giraffes and maybe an elephant.";
+    p[i].style.backgroundColor="blue";
 }
 
-const paragraphs = document.getElementsByTagName("p");
-for (let i = 0; i < paragraphs.length; i++){
-    paragraphs[i].body.style.backgroundColor="red";
-}
 
 //Auto refresh to get new images
 window.setTimeout( function() {
