@@ -1,16 +1,39 @@
 window.onload = function(){
 
     document.getElementById("addcontact").addEventListener("click", () => {
-        var nameText = document.getElementById("name").value;
+        document.getElementById("error")
+        var nameText = document.getElementById("name1").value;
         var numberText = document.getElementById("number").value;
         var emailText = document.getElementById("email").value;
     
         var table = document.getElementsByTagName('table')[0]
+
         if(!nameText || !numberText || !emailText) {
             displayError("Cannot be blank!")
             return;
         }
 
+        if(nameText.length > 20) {
+            displayError("Name must be less than 20 characters")
+            return;
+        }
+
+        if(nameText.match(/[^a-zA-Z\s]/)){
+            displayError("Name must only contain alphabet letters and spaces")
+            return;
+        }
+
+        if(numberText.length !== 10) {
+            displayError("Phone number must be 10 digits")
+            return;
+        }
+
+        if(!emailText.match(/[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)){
+            displayError("Email error, please enter a valid email address")
+            return;
+        }
+
+        error.parentNode.removeChild(error)
 
         var newRow = table.insertRow(1);
         
@@ -22,12 +45,15 @@ window.onload = function(){
         cell2.innerHTML = numberText;
         cell3.innerHTML = emailText;
 
+        name1.value = "";
+		number.value = "";
+		email.value = "";
 
+        
 
     });
 
     function displayError(message) {
         document.getElementById("errormessage").innerHTML = message;
-
     }
 }
