@@ -1,0 +1,26 @@
+table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+table * {
+	border: 1px solid #000;
+}
+
+input {
+    text-align: center;
+}
+
+table {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
