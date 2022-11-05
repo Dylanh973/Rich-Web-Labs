@@ -6,6 +6,7 @@ window.onload = function(){
         var numberText = document.getElementById("number").value;
         var emailText = document.getElementById("email").value;
     
+        var table = document.getElementById('table')
         var table = document.getElementsByTagName('table')[0]
 
         if(!nameText || !numberText || !emailText) {
@@ -33,7 +34,6 @@ window.onload = function(){
             return;
         }
 
-        error.parentNode.removeChild(error)
 
         var newRow = table.insertRow(1);
         
@@ -50,10 +50,16 @@ window.onload = function(){
 		email.value = "";
 
         
-
-    });
+    })
 
     function displayError(message) {
         document.getElementById("errormessage").innerHTML = message;
+        document.getElementById("popupmessage").classList.remove("hidden");
     }
-}
+
+	document.getElementById("closeerror").addEventListener("click", () => {
+		document.getElementById("popupmessage").classList.add("hidden");
+	})
+    }
+    
+  

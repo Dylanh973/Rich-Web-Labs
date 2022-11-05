@@ -7,12 +7,13 @@
         <h1> Phone Directory</h1>
     </head>
     <body>
+    <div id = "popupmessage" class = "hidden">
         <div id = "error">
             <p id = "errormessage"></p>
+            <button id = "closeerror">X</button>
         </div>
+    </div>
     
-        
-
         <div id = "input">
             <input id = "name1"  type = "text" placeholder="Contact Name">
             <input id = "number"  type = "number" placeholder="Mobile Number">
@@ -21,14 +22,28 @@
         </div><br>
 
         <div id = "searchcontact">
-            <input id = "searchcontact" type = "number" placeholder="Search by number" >
-            <button id = "search-contact">Search Contacts</button>
+            <input id = "searchcontact" type = "search" placeholder="Search by number" class = "form-control">
         </div>
         <br>
-        <table>
-            <th id = "sortid">Name</th>
+        <table id = "table">
+            <th onclick="sort()" id="sortid">Name</th>
             <th>Mobile Number</th>
             <th>Email</th>
+            <tr>
+                <td>Hillary</td>
+                <td>1234567890</td>
+                <td>tables@mail.com</td>
+               </tr>
+               <tr>
+                 <td>Lary</td>
+                 <td>1234567890</td>
+                 <td>developer@mail.com</td>
+               </tr>
+               <tr>
+                <td>Aaron</td>
+                <td>1234567890</td>
+                <td>developer@mail.com</td>
+              </tr>
         </table>
 
     </body>
