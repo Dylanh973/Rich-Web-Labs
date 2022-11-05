@@ -1,5 +1,5 @@
 fetch('https://jsonplaceholder.typicode.com/posts')
-  .then(response => response.json())
+  .then(result => result.json())
   .then(json => {json.filter((posts) => { return posts.title.split(" ").length > 6}).map((posts) => {
   console.log(posts.title)});
   
