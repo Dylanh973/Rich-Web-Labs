@@ -1,7 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Problem 3</title>
+        <title>Problem 2</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="script.js"></script>
     </head>
+
+    <body>
+        <h1 style="text-align: center;">
+            Github Search A Users Repo App
+        </h1>
+
+        <div class = "form">
+            <input id="usernameG" type = "text" placeholder="Enter a user name" required style="height: 50%; width: 24%">
+            <button id = "searchUser1" onclick="searchUser1()" style="height: 40px; width: 15%">Search User</button>
+        </div>
+    </form>
+</div>
+    <div id = "Float-container" class = "Float-container">
+        <h1 style="font-size: 30px;"> User Profile:   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;User Repos:</h1>
+    <div id = "UserInfoFloat" class = "UserInfoFloat">
+        <div id ="image" class = "image"></div><h1>
+            Name: <span id = "name"></span><br>
+            Username: <span id = "username"></span><br>
+            Email: <span id = "email"></span><br>
+            Location: <span id = "location"></span><br>
+            Number of Gists: <span id = "noofgists"></span>
+    </div>
+
+    <div id = "UserReposFloat" class = "UserReposFloat">
+        <table class="list" id="list">
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+</body>
+</html>

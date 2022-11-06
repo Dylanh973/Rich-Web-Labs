@@ -1,0 +1,32 @@
+.button-center{
+    text-align: center;
+  }
+
+.form {
+    border:1px solid black;
+    text-align: center;
+}
+
+
+.UserInfoFloat {
+    width: 45%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.UserReposFloat {
+
+    width: 45%;
+    float: right;
+    padding: 20px;
+    border: 2px solid red;
+    height: 200px;
+    overflow:hidden; 
+    word-wrap:break-word;
+}
+
+.image {
+    width: 20%;
+    height: 20%;
+}
