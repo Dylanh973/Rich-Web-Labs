@@ -43,3 +43,21 @@ input {
     text-align: center;
     margin: 10px auto;
 }
+#block {
+    display: inline-block;
+}
+
+.countdowntimer {
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.countdowntimer {
+    background: rgb(192, 8, 238);
+    margin: auto;
+    margin-top: 30px ;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px dotted black;
+}
