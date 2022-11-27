@@ -12,4 +12,9 @@ let hours = document.getElementById('hours')
 let minutes = document.getElementById('minutes')
 let seconds = document.getElementById('seconds')
 
+let converttime = (time) => ({
+    hours: Math.floor(time / 3600),
+    minutes: Math.floor(time % 3600 / 60),
+    seconds: Math.floor(time % 3600 % 60)
+});
 
