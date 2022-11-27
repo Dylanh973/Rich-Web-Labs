@@ -12,9 +12,11 @@ let hours = document.getElementById('hours')
 let minutes = document.getElementById('minutes')
 let seconds = document.getElementById('seconds')
 
-let converttime = (time) => ({
-    hours: Math.floor(time / 3600),
-    minutes: Math.floor(time % 3600 / 60),
-    seconds: Math.floor(time % 3600 % 60)
+//Converting the time by dividing hours by 3600, then we divide the remainder using modulo by 60 to convert the minutes, then we just add the remainder for the seconds left
+let converttime = (seconds) => ({
+    hours: Math.floor(seconds / 3600),
+    minutes: Math.floor(seconds % 3600 / 60),
+    seconds: Math.floor(seconds % 3600 % 60)
 });
+
 
