@@ -35,7 +35,9 @@ start.subscribe(() => {
     //Here we set a timer for the total time, in an interval of 1 second (1000 milliseconds).
         .timer(totaltime, 1000)
         //Here is where I pass in the i and assign it totaltime, and deduct 1 from the total time to keep track of the timing.
-        .map(i => (totaltime - 1) - i) 
+        .map(i => totaltime - i) 
+        //Error checking to ensure the timer stops at 0.
+        .takeWhile(i=> i >= 0)
         //This is where we utilize the function we created above to convert the time to seconds.
         .map(converttime) //Create a new array for storing the elements, hours minutes, seconds
         .subscribe((seconds) => { 
