@@ -12,8 +12,7 @@ function addNewnote(){
     //Giving the divs a classname so that I can style them all
     noteDiv.className="noteDiv";
 
-
-
+    
     //Styling the background of each div with the noteColor selected from the 4 options
     noteDiv.style.backgroundColor = document.getElementById("noteColor").value;
 
