@@ -43,6 +43,15 @@ input {
     text-align: center;
     margin: 10px auto;
 }
+
+.input-seconds{
+
+    width: 80px;
+    height: 35px;
+    font-size: 20px;
+}
+
+
 #block {
     display: inline-block;
 }
@@ -51,6 +60,8 @@ input {
     margin-top: 25px;
     font-size: 30px;
 }
+
+
 
 .countdowntimer {
     background: rgb(192, 8, 238);
