@@ -36,6 +36,8 @@ addnote.subscribe(() => {
         document.getElementById("noteInfo").value);
         //appending the new contents into the div
         noteDiv.appendChild(noteContents);
+        
+        
     });
 
 
@@ -61,10 +63,12 @@ addnote.subscribe(() => {
     editNote(noteid);
  });
 
- 
+
 function editNote(noteid) {
     //gets the new text to be added to the div
     const text = prompt("Please enter the new text")
     //selects the div and adds the text
     document.getElementById(noteid).innerHTML = text;
+
 }
+
