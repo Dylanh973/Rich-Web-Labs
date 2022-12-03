@@ -3,12 +3,10 @@
     <head>
         <title>Problem 2</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
-        <script src="script.js"></script>
-        <button onclick="getEditNote()" style="height: 50px; width:90px; float:left">Edit A Note</button>
-        <button onclick="getDeleteNote()" style="height: 50px; width:90px; float:left">Delete A Note</button>
-    </head>
 
+        <button id="editnote" style="height: 50px; width:90px; float:left">Edit A Note</button>
+        <button id="deletenote" style="height: 50px; width:90px; float:left">Delete A Note</button>
+    </head>
 
     <body>
         <header>
@@ -25,9 +23,10 @@
         </select>
     </form>
     <div class="button-center">
-        <button onclick="addNewnote()" style="height: 75px; width: 150px">Add note</button>
+        <button id="addnote" style="height: 75px; width: 150px">Add note</button>
     </div>
         <h1>Notes:</h1><br>
     </body>
-
+    <script src="https://unpkg.com/@reactivex/rxjs@5.0.0-beta.12/dist/global/Rx.js"></script>
+    <script src="script.js"></script>
 </html>

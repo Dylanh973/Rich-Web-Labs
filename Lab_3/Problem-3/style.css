@@ -1,0 +1,43 @@
+header {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: solid;
+}
+
+form {
+    text-align: center;
+}
+
+.button-center{
+    text-align: center;
+}
+
+.noteDiv {
+    width: 47%;
+    min-height: 160px;
+    font-size: 30px;
+    display:inline-flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+}
+
+.deleteBtn {
+    font-size: 15px;
+    position:relative;
+    width: 70px;
+    padding:10px;
+    border:1px solid black;
+    
+    }
+
+
+.editBtn {
+    font-size: 15px;
+    position:relative;
+    width: 70px;
+    padding:10px;
+    border:1px solid black;
+
+}

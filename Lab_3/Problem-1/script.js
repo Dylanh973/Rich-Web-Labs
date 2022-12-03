@@ -1,6 +1,16 @@
+
 let noteID = 1; 
 
-function addNewnote(){
+let editButton = document.getElementById('editnote')
+let editnote = Rx.Observable.fromEvent(editButton, 'click')
+
+let addButton = document.getElementById('addnote')
+let addnote = Rx.Observable.fromEvent(addButton, 'click')
+
+let deleteButton = document.getElementById('deletenote')
+let deletenote = Rx.Observable.fromEvent(deleteButton, 'click')
+
+addnote.subscribe(() => {
 
     //Declaring note ID
     const noteDiv = document.createElement("noteDiv");
@@ -26,16 +36,15 @@ function addNewnote(){
         document.getElementById("noteInfo").value);
         //appending the new contents into the div
         noteDiv.appendChild(noteContents);
-    }
+    });
 
 
-
- function getDeleteNote() {
+ deletenote.subscribe(() => {
     //Getting the note ID that the user wishes to delete
     noteid = prompt("Please enter the note ID you wish to delete");
     //passing the selected id to the deleteNote function
     deleteNote(noteid);
- }
+ });
 
  function deleteNote(noteid) {
     //selects the specific note id
@@ -45,14 +54,14 @@ function addNewnote(){
 
  }
 
- function getEditNote() {
+ editnote.subscribe(() => {
     //Gets the note id the user wishes to edit
     noteid = prompt("please enter a note ID");
     //Passing the selected it to the editNote function
     editNote(noteid);
+ });
 
- }
-
+ 
 function editNote(noteid) {
     //gets the new text to be added to the div
     const text = prompt("Please enter the new text")

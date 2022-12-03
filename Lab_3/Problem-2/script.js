@@ -1,3 +1,4 @@
+
 //Get the button and create an observe to check if the button is clicked.
 let startButton = document.getElementById('start')
 let start = Rx.Observable.fromEvent(startButton, 'click')
